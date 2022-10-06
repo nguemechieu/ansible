@@ -1,15 +1,27 @@
 {
   "openapi" : "3.0.0",
   "info" : {
-    "title" : "Tradeadviser Flow OAuth2",
+    "title" : "Tradeadviser Api",
     "description" : "This is an example of using OAuth2 Application Flow in a specification to describe security to your API.",
+    "termsOfService" : "https://tradeadviser.org/terms",
+    "contact" : {
+      "name" : "Noel m nguemechieu",
+      "email" : "nguemechieu@live.com"
+    },
+    "license" : {
+      "name" : "Tradeadviser License",
+      "url" : "https://tradeadviser.org/license"
+    },
     "version" : "1.0.0"
   },
+  "externalDocs" : {
+    "url" : "https://tradeadviser.org./api/docs"
+  },
   "servers" : [ {
-    "url" : "https://virtserver.swaggerhub.com/tradeadviser/api/1.0.0",
+    "url" : "https://tradeadviser.org/swagger.json",
     "description" : "TRADEADVISER  API"
   }, {
-    "url" : "https://www.tradeadviser.org",
+    "url" : "https://tradeadviser.org",
     "description" : "Tradeadviser  API Auto"
   } ],
   "security" : [ {
@@ -25,7 +37,7 @@
   "paths" : {
     "/" : {
       "get" : {
-        "summary" : "GET HOME PAGE",
+        "summary" : "Get auth user's home page'",
         "description" : "This is an example operation to show how security is applied to the call.",
         "responses" : {
           "200" : {
